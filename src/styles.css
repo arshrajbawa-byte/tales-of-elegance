@@ -2,6 +2,8 @@
 @source "../src";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
 @custom-variant dark (&:is(.dark *));
 
 /*
@@ -62,9 +64,19 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.25rem;
+  --background: oklch(0.08 0.005 60);
+  --foreground: oklch(0.96 0.01 80);
+  --gold: oklch(0.78 0.13 80);
+  --gold-soft: oklch(0.85 0.08 85);
+  --gold-deep: oklch(0.55 0.12 70);
+  --ink: oklch(0.06 0.005 60);
+  --cream: oklch(0.96 0.015 80);
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --gradient-gold: linear-gradient(135deg, oklch(0.85 0.1 85), oklch(0.65 0.13 70));
+  --shadow-gold: 0 20px 60px -20px oklch(0.65 0.13 70 / 0.4);
+
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
@@ -132,13 +144,58 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
+@theme inline {
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-deep: var(--gold-deep);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
 
+@layer base {
+  * { border-color: var(--color-border); }
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: 0.01em;
   }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-serif { font-family: var(--font-serif); }
+  .text-gold { color: var(--gold); }
+  .bg-gold { background-color: var(--gold); }
+  .border-gold { border-color: var(--gold); }
+  .gradient-gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .divider-gold { width: 60px; height: 1px; background: var(--gradient-gold); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in-slow {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  .animate-fade-up { animation: fade-up 0.9s ease-out both; }
+  .animate-fade-in-slow { animation: fade-in-slow 1.8s ease-out both; }
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-700 { animation-delay: 0.7s; }
 }
