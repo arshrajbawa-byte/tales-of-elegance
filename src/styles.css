@@ -2,6 +2,8 @@
 @source "../src";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
 @custom-variant dark (&:is(.dark *));
 
 /*
@@ -62,9 +64,19 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.25rem;
+  --background: oklch(0.08 0.005 60);
+  --foreground: oklch(0.96 0.01 80);
+  --gold: oklch(0.78 0.13 80);
+  --gold-soft: oklch(0.85 0.08 85);
+  --gold-deep: oklch(0.55 0.12 70);
+  --ink: oklch(0.06 0.005 60);
+  --cream: oklch(0.96 0.015 80);
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --gradient-gold: linear-gradient(135deg, oklch(0.85 0.1 85), oklch(0.65 0.13 70));
+  --shadow-gold: 0 20px 60px -20px oklch(0.65 0.13 70 / 0.4);
+
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
