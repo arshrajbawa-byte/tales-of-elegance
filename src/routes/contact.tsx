@@ -60,14 +60,6 @@ function ContactPage() {
                     <p className="font-serif text-lg">@thesignaturestories</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4">
-                  <MapPin className="w-5 h-5 text-gold mt-1 shrink-0" />
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Studio</p>
-                    <p className="font-serif text-lg">Mumbai · India</p>
-                    <p className="text-cream/50 text-sm mt-1">Available pan-India & destination</p>
-                  </div>
-                </li>
               </ul>
             </div>
           </div>
