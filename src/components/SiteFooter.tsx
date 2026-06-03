@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, Phone } from "lucide-react";
+import logoMark from "@/assets/logo-mark.png.asset.json";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-gold/20 bg-ink py-16 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-sm">
         <div>
+          <img src={logoMark.url} alt="The Signature Stories" className="h-14 w-auto invert mb-4" />
           <p className="font-serif text-2xl text-cream mb-3">
             The <span className="gradient-gold-text italic">Signature</span> Stories
           </p>

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoMark from "@/assets/logo-mark.png.asset.json";
 
 const links = [
   { to: "/", label: "Home" },
@@ -31,7 +32,12 @@ export function SiteHeader() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="font-serif text-xl md:text-2xl text-cream tracking-wide">
+          <img
+            src={logoMark.url}
+            alt="The Signature Stories"
+            className="h-10 md:h-12 w-auto invert transition-transform duration-500 group-hover:scale-105"
+          />
+          <span className="font-serif text-lg md:text-xl text-cream tracking-wide hidden sm:inline">
             The <span className="gradient-gold-text italic">Signature</span> Stories
           </span>
         </Link>
