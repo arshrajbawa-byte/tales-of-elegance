@@ -43,14 +43,14 @@ function ContactPage() {
                   <Mail className="w-5 h-5 text-gold mt-1 shrink-0" />
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Email</p>
-                    <p className="font-serif text-lg">hello@signaturestories.in</p>
+                    <p className="font-serif text-lg">thesignaturestories@gmail.com</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
                   <Phone className="w-5 h-5 text-gold mt-1 shrink-0" />
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Call</p>
-                    <p className="font-serif text-lg">+91 98765 43210</p>
+                    <p className="font-serif text-lg">+91 98880 38155</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
