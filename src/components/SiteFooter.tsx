@@ -30,7 +30,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-cream/70">
             <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-gold" /> thesignaturestories@gmail.com</li>
             <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-gold" /> +91 98880 38155 · +91 92163 38155</li>
-            <li className="flex items-center gap-3"><Instagram className="w-4 h-4 text-gold" /> @thesignaturestories</li>
+            <li><a href="https://www.instagram.com/thesignaturestories" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-gold transition-colors"><Instagram className="w-4 h-4 text-gold" /> @thesignaturestories</a></li>
           </ul>
         </div>
       </div>
