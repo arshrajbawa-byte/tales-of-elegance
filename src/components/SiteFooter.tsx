@@ -29,7 +29,7 @@ export function SiteFooter() {
           <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Connect</p>
           <ul className="space-y-3 text-cream/70">
             <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-gold" /> thesignaturestories@gmail.com</li>
-            <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-gold" /> +91 98880 38155</li>
+            <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-gold" /> +91 98880 38155 · +91 92163 38155</li>
             <li className="flex items-center gap-3"><Instagram className="w-4 h-4 text-gold" /> @thesignaturestories</li>
           </ul>
         </div>

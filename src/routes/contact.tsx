@@ -51,6 +51,7 @@ function ContactPage() {
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Call</p>
                     <p className="font-serif text-lg">+91 98880 38155</p>
+                    <p className="font-serif text-lg">+91 92163 38155</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
