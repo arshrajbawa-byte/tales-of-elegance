@@ -54,12 +54,14 @@ function ContactPage() {
                     <p className="font-serif text-lg">+91 92163 38155</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4">
-                  <Instagram className="w-5 h-5 text-gold mt-1 shrink-0" />
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Instagram</p>
-                    <p className="font-serif text-lg">@thesignaturestories</p>
-                  </div>
+                <li>
+                  <a href="https://www.instagram.com/thesignaturestories" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 hover:text-gold transition-colors">
+                    <Instagram className="w-5 h-5 text-gold mt-1 shrink-0" />
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.2em] text-cream/50 mb-1">Instagram</p>
+                      <p className="font-serif text-lg">@thesignaturestories</p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
